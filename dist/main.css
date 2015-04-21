@@ -1,0 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+50 #FAFAFA
+100 #F5F5F5
+200 #EEEEEE
+300 #E0E0E0
+400 #BDBDBD
+500 #9E9E9E
+600 #757575
+700 #616161
+800 #424242
+*/
+/*
+50#FFEBEE
+100#FFCDD2
+200#EF9A9A
+300#E57373
+400#EF5350
+500#F44336
+600#E53935
+700#D32F2F
+800#C62828
+900#B71C1C
+A100#FF8A80
+A200#FF5252
+A400#FF1744
+A700#D50000
+*/
+html {
+  color: #F44336; }
