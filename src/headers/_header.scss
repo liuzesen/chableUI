@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.header {
+	display: block;
+	width: 100%;
+	height: $headerHeight;
+	text-align: center;
+	line-height: $headerHeight;
+	font-size: 18px;
+}
+
+.header--top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.has-header {
+	margin-top: $headerHeight;
+}

@@ -1,15 +1,130 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 .button {
 	height: $normalButtonHeight;
-	
+	padding: 0 8px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: $normalButtonHeight;
 }
-.small-button {
+
+.button--radius {
+	border-radius: 6px;
+}
+
+.button--small {
 	height: $smallButtonHeight;
+	font-size: 10px;
+	line-height: $smallButtonHeight;
 }
-.large-button {
+.button--large {
 	height: $largeButtonHeight;
+	font-size: 28px;
+	line-height: $largeButtonHeight;
 }
 
+@mixin buttonStyle($bgColor, $borderColor) {
+	background-color: $bgColor;
+	border: 1px solid $borderColor;
+}
 
+.button--light {
+	@include buttonStyle($white, $gray100);
 
+	&:hover {
+		@include buttonStyle($gray50, $gray200);
+	}
+
+	&:active {
+		@include buttonStyle($gray100, $gray300);
+	}
+}
+
+.button--stable {
+	@include buttonStyle($gray50, $gray200);
+
+	&:hover {
+		@include buttonStyle($gray100, $gray300);
+	}
+
+	&:active {
+		@include buttonStyle($gray200, $gray400);
+	}
+}
+
+.button--primary {
+	color: $white;
+	@include buttonStyle($blue400, $blue600);
+
+	&:hover {
+		@include buttonStyle($blue500, $blue700);
+	}
+
+	&:active {
+		@include buttonStyle($blue600, $blue800);
+	}
+}
+
+.button--success {
+	color: $white;
+	@include buttonStyle($green400, $green600);
+
+	&:hover {
+		@include buttonStyle($green500, $green700);
+	}
+
+	&:active {
+		@include buttonStyle($green600, $green800);
+	}
+}
+
+.button--message {
+	color: $white;
+	@include buttonStyle($yellow400, $yellow600);
+
+	&:hover {
+		@include buttonStyle($yellow500, $yellow700);
+	}
+
+	&:active {
+		@include buttonStyle($yellow600, $yellow800);
+	}
+}
+
+.button--warn {
+	color: $white;
+	@include buttonStyle($orange400, $orange600);
+
+	&:hover {
+		@include buttonStyle($orange500, $orange700);
+	}
+
+	&:active {
+		@include buttonStyle($orange600, $orange800);
+	}
+}
+
+.button--error {
+	color: $white;
+	@include buttonStyle($red400, $red600);
+
+	&:hover {
+		@include buttonStyle($red500, $red700);
+	}
+
+	&:active {
+		@include buttonStyle($red600, $red800);
+	}
+}
+
+.button--block {
+	display: block;
+}
+
+.button--full {
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.button-group {
+}

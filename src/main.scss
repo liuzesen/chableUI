@@ -1,8 +1,20 @@
 @charset "utf-8";
 
 @import "reset";
-@import "colors/main";
 
-html {
-	color: $red500;
-}
+@import "vars";
+
+@import "colors/gray";
+@import "colors/red";
+@import "colors/blue";
+@import "colors/yellow";
+@import "colors/orange";
+@import "colors/green";
+
+@import "buttons/button";
+
+@import "headers/header";
+
+@import "utils/colors";
+@import "utils/float";
+
